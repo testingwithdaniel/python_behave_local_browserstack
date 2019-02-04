@@ -1,0 +1,16 @@
+language: python
+
+python:
+    - "2.7"
+cache: pip
+install:
+  - pip install -r requirements.txt
+
+addons:
+  browserstack:
+    username: "macsmith2"
+    access_key:
+      secure: "Q01c/hcV3pzSRZI2d03obxC+Kb7wXmsl0lVlbb1zlFStCcnN3PAg5A+GG1JVSsCDp05UPtaMqxaqbZ4JvtCixXf6g2RVvy8CnOfqMcLsBGVHM+HWIH9P9zhsP6bavpf52+MFXnC+nUkDHA5e7oN0dIG7WkwnJfkLqHyOMnwXgIW50LSa7pp6B2Mu8IOFRWY0KEeXI56KiRr89tIQY0RYj3USQaDopGcNFTZ/VrvVU5W23jg2kWxhCXtvPr6ZByLwZDFleadqDjIhHgGroMu8D5gI+Bs42tJJZYe6zOxpNP78b9kKITPKyDplWGg8/XVbGAoWyVsxdRIugg9EHbAcZmQpSmMhg1+lNEYTtzlmN+1CbNrIa/wMICIdBnf/Zdumq5Mbj6VvUozD2bE0LTWDglKpypSjHyHAM8nxDxaoV4YmAHRcdDureYw++yOIpxEcjlyIR7y1jNGOPlhoBR8EGvAQyCogYMiriFRqfeKY2eAg2asIOB91r0xPty0HpTRxp6igtvDHbVhJiQTQzhRU59/6Px5Ocof3na2XwZfhNOFYbFeDM4f/hq1o5xPOyFDkOjc55es+ehrBaT+GuwFZcnldHndKZSIIA2yyY/cKInzT5FZI7sXGXS1cpdQrQKkTnby0zopiZv2iWeaFM9cDzZTY5RZoDGywGp1M+q98U8w="
+
+script:
+  - paver run browserstack

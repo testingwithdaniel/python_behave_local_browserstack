@@ -1,0 +1,24 @@
+Feature: Acting in openweather home page. Checking if important label is there # features/home_page_verify.feature:1
+
+  Scenario: Open website                                            # features/home_page_verify.feature:2
+    Given I visit url "https://openweathermap.org"                  # features/steps/home_page_verify.py:10
+    Then title be "Сurrent weather and forecast - OpenWeatherMap"   # features/steps/home_page_verify.py:14
+    Then search button text should be "Search"                      # features/steps/home_page_verify.py:18
+    Then tagline should be "We Deliver 2 Billion Forecasts Per Day" # features/steps/home_page_verify.py:22
+    Then I should see navigation bar                                # features/steps/home_page_verify.py:26
+    Then I should see footer                                        # features/steps/home_page_verify.py:30
+
+Feature: Search validation of city for openweathermap website # features/search_city.feature:1
+
+  Scenario: Searching Invalid city                        # features/search_city.feature:2
+    Given I open url "https://openweathermap.org"         # features/steps/search_city.py:11
+    When I enter "SomeCityWhichDoesNotExists"             # features/steps/search_city.py:15
+    And Click Search button                               # features/steps/search_city.py:19
+    Then I should see result for invalid city "Not found" # features/steps/search_city.py:23
+
+  Scenario: Searching Valid city                      # features/search_city.feature:8
+    Given I open url "https://openweathermap.org"     # features/steps/search_city.py:11
+    When I enter "Lucknow"                            # features/steps/search_city.py:15
+    And Click Search button                           # features/steps/search_city.py:19
+    Then I should see result for valid city "Lucknow" # features/steps/search_city.py:27
+

@@ -1,0 +1,8 @@
+{
+    "environments": [
+        {
+            "browser": "chrome",
+            "chrome_driver_exe": "/Users/mukeshtiwari/Documents/sel_setup/chromedriver"
+        }
+    ]
+}
