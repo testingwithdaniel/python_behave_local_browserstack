@@ -5,8 +5,10 @@ Python Behave framework to run test on a local browser or BrowserStack.
 python 2.7
 
 # Installation
-1. Download the repo as zip file or do type ```git clone https://github.com/mukeshtiwari1987/python_behave_local_browserstack```
-2. In the command prompt type ```pip install -r requirements.txt```
+1. Download the repo as zip file or type
+```git clone https://github.com/mukeshtiwari1987/python_behave_local_browserstack```
+2. In the command prompt type
+```pip install -r requirements.txt```
 
 # Structure
 ![Folder Structure Image](https://i.ibb.co/cyBmmPT/Screen-Shot-2019-02-05-at-1-55-54-AM.png)
@@ -22,6 +24,7 @@ python 2.7
 # How to integrate test with Travis
 1. Sign up for an account on [Travis CI](https://travis-ci.org/).
 2. Ensure you have Ruby installed on your machine.
-3. In the command prompt type ```gem install travis```
+3. In the command prompt type
+```gem install travis```
 4. In the command prompt type ```travis encrypt access_key="BROWSERSTACK_ACCESS_KEY"``` and make the note of output.
 5. Place the output in under secure in .travis.yml.
