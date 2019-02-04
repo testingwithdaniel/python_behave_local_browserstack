@@ -9,7 +9,7 @@ python 2.7
 2. In the command prompt type ```pip install -r requirements.txt```
 
 # Structure
-![Folder Structure Image](https://ibb.co/zmMkk1f)
+![Folder Structure Image](https://i.ibb.co/cyBmmPT/Screen-Shot-2019-02-05-at-1-55-54-AM.png)
 
 # How to run test on local machine in Chrome
 1. Download Chrome Driver and provide the location of file in ```config/local.json```
