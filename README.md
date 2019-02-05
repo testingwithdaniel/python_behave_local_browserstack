@@ -15,11 +15,15 @@ python 2.7
 
 # How to run test on local machine in Chrome
 1. Download Chrome Driver and provide the location of file in ```config/local.json```
+2. In the command prompt type
+```paver run local```
 
 # How to run test on BrowserStack
 1. Sign up for a free trial account on [BrowserStack](https://www.browserstack.com/).
 2. Make a note of your __Username__ and __Access Key__
 3. Place Username and Access Key in ```config/browserstack.json```
+4. In the command prompt type
+```paver run browserstack```
 
 # How to integrate test with Travis
 1. Sign up for an account on [Travis CI](https://travis-ci.org/).
